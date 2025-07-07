@@ -1,6 +1,6 @@
 # 🧬 Guide: Uploading Raw Sequencing Data to NCBI SRA via FTP (macOS)
 
-**Reference:** Rachael Lappan’s SRA Guide
+**Reference:** Rachael Lappan’s SRA Guide: https://rachaellappan.github.io/SRA/
 
 ---
 

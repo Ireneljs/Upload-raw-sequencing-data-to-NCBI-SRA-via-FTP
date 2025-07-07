@@ -43,7 +43,7 @@ chmod +r /path/to/your/data_folder/*.fastq.gz
 
 ## 🧾 Step 3: Start Your SRA Submission
 
-Go to: [https://submit.ncbi.nlmnih.gov/subs/sra/  
+Go to: <https://submit.ncbi.nlm.nih.gov/subs/sra/>  
 Choose **FTP upload** when prompted.
 
 You’ll receive:

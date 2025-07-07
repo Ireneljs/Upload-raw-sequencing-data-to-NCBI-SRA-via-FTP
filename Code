@@ -1,0 +1,24 @@
+# Step 1: Check file permissions
+ls -l /path/to/your/data_folder/*.fastq.gz  # Lists permissions for each FASTQ file
+
+# Step 2: Fix file permissions if needed
+chmod +r /path/to/your/data_folder/*.fastq.gz  # Makes files readable to avoid FTP errors
+
+# Step 3: Install FTP client (if not already installed)
+brew install inetutils  # Installs FTP tools on macOS via Homebrew
+
+# Step 4: Connect to NCBI FTP server
+ftp ftp-private.ncbi.nlm.nih.gov  # Connects to NCBI's private FTP server
+
+# (Enter your username and password when prompted)
+
+# Step 5: Navigate to your upload folder
+cd uploads/your.email_example_abc123  # Replace with your actual upload path
+# Step 6: Create and enter a subfolder for your submission
+mkdir my_submission_folder  # Creates a new folder for your submission
+cd my_submission_folder     # Enters the newly created folder
+# Step 7: Set your local directory to the folder with FASTQ files
+lcd "/path/to/your/data_folder"  # Sets local directory for file upload
+# Step 8: Upload all FASTQ files
+prompt         # Turns off confirmation prompts for each file
+mput *.fastq.gz  # Uploads all FASTQ files in the folder
